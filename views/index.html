@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="dark-bg">
+    <!-- Sidebar toggle button -->
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle Sidebar">📖</button>
+    <div id="sidebar" class="sidebar">
+        <h2>kkronggs site</h2>
+        <a href="/home" class="sidebar-btn <%= activePage === 'home' ? 'active' : '' %>">
+            <img src="/images/home.png" alt="Home Icon" class="icon"> home
+        </a>
+        <a href="/about" class="sidebar-btn <%= activePage === 'about' ? 'active' : '' %>">
+            <img src="/images/about.png" alt="About Icon" class="icon"> about
+        </a>
+    </div>
+    <div class="main-content center-content">
+        <h1><span id="greeting">Hi</span>, I'm <span class="gradient-text">kkrongg</span> 👋</h1>
+        <p>I wasn't always called kkrongg, I was before called krong, crong, crong_, or crongie. 
+            <a href="/about" class="about-link">(About me)</a>
+        </p>
+        <p class="small-text">FYI: I only have 2 friends (bruh)</p>
+    </div>
+    <script src="/scripts.js"></script>
+</body>
+</html>

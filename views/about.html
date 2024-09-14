@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kkronggswebsite - about me</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="dark-bg">
+    <!-- Sidebar toggle button -->
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle Sidebar">📖</button>
+    <div id="sidebar" class="sidebar">
+        <h2>kkronggs site</h2>
+        <a href="/home" class="sidebar-btn <%= activePage === 'home' ? 'active' : '' %>">
+            <img src="/images/home.png" alt="Home Icon" class="icon"> home
+        </a>
+        <a href="/about" class="sidebar-btn <%= activePage === 'about' ? 'active' : '' %>">
+            <img src="/images/about.png" alt="About Icon" class="icon"> about
+        </a>
+    </div>
+    <div class="main-content center-content">
+        <h1><span class="gradient-text">About the fella named kkrongg</span></h1>
+        <p>i speciallize in using chatgpt. i hack 4 fun all day all night. biggest doors nerd.</p>
+        <p class="additional-text">i can also program without chatgpt, i swear!!!!</p>
+        <p class="additional-text"><strong>i can make <span class="bold-text">discord bots</span> using javascript, thats only what i can do looooooooool</strong></p>
+        <div class="socials">
+            <h2>Socials:</h2>
+            <p><a href="https://www.youtube.com/@krinji6969" class="social-link" target="_blank">YouTube</a></p>
+            <p><a href="https://www.roblox.com/users/1473334029/profile" class="social-link" target="_blank">Roblox</a></p>
+        </div>
+    </div>
+    <script src="/scripts.js"></script>
+</body>
+</html>
